@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramesh Chandra Sahoo — Frontend Developer & Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./static/css/Style.css">
+</head>
+<body>
+
+<!-- Animated lightning canvas background -->
+<canvas id="bolt-canvas"></canvas>
+<div class="glow-grid"></div>
+
+<!-- Cursor spark -->
+<div class="cursor-spark" id="cursorSpark"></div>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-bolt">⚡</div>
+  <div class="loader-text">RAMESH.DEV</div>
+</div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a href="#home" class="logo">RC<span class="logo-bolt">⚡</span>S</a>
+  <nav class="nav-links">
+    <a href="#home" class="nav-link"><span>Home</span></a>
+    <a href="#about" class="nav-link"><span>About</span></a>
+    <a href="#work" class="nav-link"><span>Work</span></a>
+    <a href="#skills" class="nav-link"><span>Skills</span></a>
+    <a href="#contact" class="nav-link"><span>Contact</span></a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal-line">Frontend Developer &amp; Visual Editor</p>
+    <h1 class="hero-title">
+      <span class="line" data-text="Ramesh Chandra">Ramesh Chandra</span>
+      <span class="line highlight" data-text="Sahoo">Sahoo</span>
+    </h1>
+    <p class="hero-desc reveal-line">I build fast, animated web interfaces and craft sharp visual edits —
+      turning ideas into things that move, glow and respond.</p>
+    <div class="hero-cta reveal-line">
+      <a href="#work" class="btn btn-primary"><span>See my work</span></a>
+      <a href="#contact" class="btn btn-ghost"><span>Get in touch</span></a>
+    </div>
+  </div>
+
+  <div class="hero-orb">
+    <div class="orb-avatar">
+      <div class="orb-initials">RS</div>
+      <div class="orb-ring ring-1"></div>
+      <div class="orb-ring ring-2"></div>
+      <div class="orb-ring ring-3"></div>
+    </div>
+
+    <!-- Hover-reveal social bolts around the orb -->
+    <div class="social-orbit">
+      <a class="social-node" data-label="Instagram" href="https://instagram.com/" target="_blank" rel="noopener" style="--i:0">
+        <svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 .01 4.1.06 1.1.05 1.8.22 2.4.46.66.26 1.2.6 1.75 1.14.5.5.86 1.05 1.14 1.75.24.6.4 1.3.46 2.4.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1.1-.22 1.8-.46 2.4a4.7 4.7 0 0 1-1.14 1.75 4.7 4.7 0 0 1-1.75 1.14c-.6.24-1.3.4-2.4.46-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1.1-.05-1.8-.22-2.4-.46a4.7 4.7 0 0 1-1.75-1.14 4.7 4.7 0 0 1-1.14-1.75c-.24-.6-.4-1.3-.46-2.4C2.01 15 2 14.7 2 12s.01-3 .06-4.1c.05-1.1.22-1.8.46-2.4.26-.66.6-1.2 1.14-1.75A4.7 4.7 0 0 1 5.4 2.62c.6-.24 1.3-.4 2.4-.46C8.9 2.01 9.2 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
+      </a>
+      <a class="social-node" data-label="LinkedIn" href="https://linkedin.com/" target="_blank" rel="noopener" style="--i:1">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-.95 1.8-1.95 3.7-1.95 3.95 0 4.68 2.5 4.68 5.75V21h-4v-5.6c0-1.35-.03-3.1-1.9-3.1-1.9 0-2.2 1.45-2.2 3v5.7h-4V9z"/></svg>
+      </a>
+      <a class="social-node" data-label="Email" href="mailto:ramesh.sahoo@example.com" style="--i:2">
+        <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2 2.2V17h16V7.2l-8 6-8-6zm.7-.2L12 12.5 19.3 7H4.7z"/></svg>
+      </a>
+      <a class="social-node" data-label="WhatsApp" href="https://wa.me/910000000000" target="_blank" rel="noopener" style="--i:3">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.6 2 2.14 6.46 2.14 11.9c0 1.87.5 3.62 1.44 5.14L2 22l5.14-1.55a9.85 9.85 0 0 0 4.9 1.31h.01c5.44 0 9.9-4.46 9.9-9.9C21.95 6.46 17.5 2 12.04 2zm0 17.9h-.01c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.05.92.92-2.97-.2-.31a7.9 7.9 0 0 1-1.23-4.3c0-4.39 3.57-7.96 7.96-7.96 2.13 0 4.12.83 5.63 2.34a7.9 7.9 0 0 1 2.32 5.62c0 4.39-3.58 7.96-7.79 8zm4.35-5.96c-.24-.12-1.4-.7-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.76.93-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.4-1.32-1.64-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span></span>
+    <p>scroll</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="section-head reveal">
+    <p class="section-num">01</p>
+    <h2>About</h2>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-photo reveal">
+      <div class="photo-frame">
+        <div class="&lt;img&gt;">
+          <span><img src="./static/images/dpp.webp" ></span>
+          <small>replace .photo-placeholder in index.html with an &lt;img&gt;</small>
+        </div>
+        <div class="frame-bolt">⚡</div>
+      </div>
+    </div>
+
+    <div class="about-text reveal">
+      <p>I'm <strong>Ramesh Chandra Sahoo</strong>, a frontend developer who enjoys turning static
+        designs into interfaces that feel alive — smooth transitions, responsive layouts, and
+        micro-interactions that make a page feel considered rather than assembled.</p>
+      <p>Alongside development, I work as a photo &amp; video editor, so I bring an editor's eye for
+        pacing, contrast and rhythm into everything I build on the web.</p>
+
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="30">0</span>
+          <span class="stat-label">Projects built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="15">0</span>
+          <span class="stat-label">Happy clients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Years experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK / ACTIVITY -->
+<section id="work" class="work">
+  <div class="section-head reveal">
+    <p class="section-num">02</p>
+    <h2>Work &amp; Activity</h2>
+  </div>
+
+  <div class="work-grid">
+    <article class="work-card reveal" style="--d:0">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">🖥️</div>
+      <h3>Portfolio Builder App</h3>
+      <p>A drag-and-drop landing page builder with live preview, built with vanilla JS and a
+        component-based CSS system.</p>
+      <div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+    </article>
+
+    <article class="work-card reveal" style="--d:1">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">📊</div>
+      <h3>Admin Dashboard UI</h3>
+      <p>Animated analytics dashboard with charts, live counters and a dark/light theme switch.</p>
+      <div class="work-tags"><span>Django</span><span>JS</span><span>Chart.js</span></div>
+    </article>
+
+    <article class="work-card reveal" style="--d:2">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">🎬</div>
+      <h3>Reel &amp; Video Editing</h3>
+      <p>Short-form video edits for creators — colour grading, transitions and motion titles for
+        Instagram and YouTube.</p>
+      <div class="work-tags"><span>Editing</span><span>Color Grade</span><span>Motion</span></div>
+    </article>
+
+    <article class="work-card reveal" style="--d:3">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">🛒</div>
+      <h3>E-commerce Storefront</h3>
+      <p>Responsive storefront with animated cart drawer, product filters and checkout flow.</p>
+      <div class="work-tags"><span>Django</span><span>HTML/CSS</span><span>JS</span></div>
+    </article>
+
+    <article class="work-card reveal" style="--d:4">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">📸</div>
+      <h3>Photo Retouching Set</h3>
+      <p>Portrait and product photo retouching — cleanup, color correction and composite edits.</p>
+      <div class="work-tags"><span>Photoshop</span><span>Lightroom</span></div>
+    </article>
+
+    <article class="work-card reveal" style="--d:5">
+      <div class="work-card-glow"></div>
+      <div class="work-icon">⚡</div>
+      <h3>Interactive Landing Pages</h3>
+      <p>Client landing pages built around scroll-triggered animation and canvas backgrounds — like
+        this one.</p>
+      <div class="work-tags"><span>Canvas</span><span>GSAP-style JS</span><span>CSS</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="section-head reveal">
+    <p class="section-num">03</p>
+    <h2>Skills</h2>
+  </div>
+
+  <div class="skills-grid reveal">
+    <div class="skill-bar" style="--pct:92"><span class="skill-name">HTML / CSS</span><div class="bar"><div class="fill"></div></div></div>
+    <div class="skill-bar" style="--pct:85"><span class="skill-name">JavaScript</span><div class="bar"><div class="fill"></div></div></div>
+    <div class="skill-bar" style="--pct:80"><span class="skill-name">Django</span><div class="bar"><div class="fill"></div></div></div>
+    <div class="skill-bar" style="--pct:88"><span class="skill-name">Photo / Video Editing</span><div class="bar"><div class="fill"></div></div></div>
+    <div class="skill-bar" style="--pct:75"><span class="skill-name">UI Animation</span><div class="bar"><div class="fill"></div></div></div>
+  </div>
+</section>
+
+<!-- CONTACT / FEEDBACK -->
+<section id="contact" class="contact">
+  <div class="section-head reveal">
+    <p class="section-num">04</p>
+    <h2>Contact &amp; Feedback</h2>
+  </div>
+
+  <div class="contact-grid">
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <input type="text" id="name" required placeholder=" ">
+        <label for="name">Your name</label>
+        <span class="field-line"></span>
+      </div>
+      <div class="field">
+        <input type="email" id="email" required placeholder=" ">
+        <label for="email">Your email</label>
+        <span class="field-line"></span>
+      </div>
+      <div class="field">
+        <textarea id="message" rows="4" required placeholder=" "></textarea>
+        <label for="message">Message or feedback</label>
+        <span class="field-line"></span>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span class="btn-text">Send message</span>
+        <span class="btn-bolt">⚡</span>
+      </button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+
+    <div class="contact-side reveal">
+      <p class="contact-lead">Prefer to reach out directly? Hover a bolt.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="https://instagram.com/" target="_blank" rel="noopener">
+          <span class="cl-icon">⚡</span><span class="cl-text">Instagram</span>
+        </a>
+        <a class="contact-link" href="https://linkedin.com/" target="_blank" rel="noopener">
+          <span class="cl-icon">⚡</span><span class="cl-text">LinkedIn</span>
+        </a>
+        <a class="contact-link" href="mailto:ramesh.sahoo@example.com">
+          <span class="cl-icon">⚡</span><span class="cl-text">Email</span>
+        </a>
+        <a class="contact-link" href="https://wa.me/910000000000" target="_blank" rel="noopener">
+          <span class="cl-icon">⚡</span><span class="cl-text">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Ramesh Chandra Sahoo <span class="footer-bolt">⚡</span> <span id="year"></span></p>
+</footer>
+
+<script src="static/components/Script.js"></script>
+</body>
+</html>
